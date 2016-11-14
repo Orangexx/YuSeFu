@@ -1,3 +1,4 @@
+// 约瑟夫.cpp : 定义控制台应用程序的入口点。
 //
 
 #include "stdafx.h"
@@ -73,6 +74,7 @@ int main()
 	L->next = L;
 
 	int num;
+	cout << "请输入总人数:" << endl;
 	cin >> num;
 	int* Number;
 	Number = (int*)malloc(sizeof(int)*num);
@@ -80,9 +82,11 @@ int main()
 	Password = (int*)malloc(sizeof(int)*num);
 
 	int m;
+	cout << "请输入初始密码:" << endl;
 	cin >> m;
 
 	int password;
+	cout << "请按照顺序输入各位朋友的密码:" << endl;
 	for (int i = 0; i < num; i++)
 	{
 		cin >> password;
